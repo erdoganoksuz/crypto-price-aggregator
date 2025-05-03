@@ -1,0 +1,28 @@
+{
+  "name": "crypto-data-gatherer",
+  "version": "1.0.0",
+  "description": "Cryptocurrency data gathering solution using Hyperswarm RPC and Hypercores",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "node client.js",
+    "start:dht": "hyperdht --bootstrap --host 127.0.0.1 --port 30001"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.2",
+    "axios": "^1.9.0",
+    "cli-table3": "^0.6.5",
+    "hyperbee": "^2.24.2",
+    "hypercore": "^11.6.3",
+    "hyperdht": "^6.5.1",
+    "latest": "^0.2.0",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
